@@ -4,12 +4,12 @@
 
   <default revision="master" remote="s2e" sync-j="4" />
 
-  <project name="scripts">
+  <project name="scripts" revision="master">
       <linkfile src="Makefile" dest="Makefile"/>
       <linkfile src="Makefile.docker" dest="Makefile.docker"/>
   </project>
-  <project name="decree"/>
-  <project name="guest-images"/>
+  <project name="decree" revision="master"/>
+  <project name="guest-images" revision="master"/>
   <project name="qemu" revision="v3.0.0-se"/>
   <project name="s2e"/>
 
@@ -18,8 +18,8 @@
     We need to clone s2e-env a second time here so that it is possible to build the docker image.
     TODO: think about how to remove this.
   -->
-  <project name="s2e-env"/>
+  <project name="s2e-env" revision="master"/>
 
-  <project name="s2e-linux-kernel"/>
+  <project name="s2e-linux-kernel" revision="master"/>
 </manifest>
 
